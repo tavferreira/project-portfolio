@@ -101,11 +101,12 @@ img.picture {
 section {
   background: #f4f4f4 0% 0% no-repeat padding-box;
   font-size: 17px;
-  padding: 56px 37px;
+  padding: 60px 40px;
   text-align: center;
+  line-height: 29px;
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
   background: #ffffff 0% 0% no-repeat padding-box;
 }
 
@@ -122,6 +123,68 @@ h2 {
   font-size: 22px;
   font-weight: 700;
   margin: 0 0 40px 0;
+}
+
+.skills {
+  display: flex;
+}
+
+.skill-column {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.skill-title {
+  color: #fa382f;
+  text-transform: uppercase;
+  margin: 10px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 20px 0px;
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bottom-link {
+  border: 3px solid #ff0000;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.bottom-linkedin {
+  background-image: url(assets/linkedin-bottom-small.svg);
+}
+
+.bottom-github {
+  background-image: url(assets/github-bottom-small.svg);
+}
+
+.bottom-stackoverflow {
+  background-image: url(assets/stackoverflow-bottom-small.svg);
+}
+
+.link-button {
+  width: 30%;
+}
+
+.link-button a {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #fa382f;
+  font-weight: bold;
+  margin-top: 10px;
+  text-decoration: none;
 }
 
 footer {
