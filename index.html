@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+    <meta name="format-detection" content="telephone=no">
   </head>
   <body>
     <header>
@@ -26,7 +27,7 @@
         <main>
         <section class="intro">
         <p>
-            Hello! I’m a strategic and creative senior art director/digital designer
+            <span class="line-dot"></span>Hello! I’m a strategic and creative senior art director/digital designer
             with frontend developer skills and experience design at heart. I’m all
             about solving problems that matter and creating awesome, meaningful
             products for people to love.
@@ -40,8 +41,23 @@
             pair-programming, Github.
         </p>
         </section>
-        <section>
+        <section class="featured-projects">
             <h2>Featured Projects</h2>
+            <div class="main-projects">
+                <article class="project-expanded">
+                    <div class="project-snapshot">
+                        <!-- <img src="assets/project-small.png" alt="Project snapshot"> -->
+                        <div class="project-title">Sunny Side Up</div>
+                    </div>
+                </article>
+                <article class="project-expanded"></article>
+            </div>
+            <div class="other-projects">
+                <h3>Other Projects</h3>
+                <article class="project-collapsed"></article>
+                <article class="project-collapsed"></article>
+                <article class="project-collapsed"></article>
+            </div>
         </section>
         <section>
             <h2>My Thoughts</h2>
@@ -65,28 +81,32 @@
                         <li>Redux</li>
                     </ul>
                 </div>
-                <div class="skill-column">
-                    <ul>
-                        <li class="skill-title">Toolbox</li>
-                        <li>Atom</li>
-                        <li>Postman</li>
-                        <li>Adobe Photoshop</li>
-                        <li>Adobe Illustrator</li>
-                        <li>Microsoft Excel</li>
-                        <li>Keynote</li>
-                        <li>Slack</li>
-                    </ul>
-                    <ul>
-                        <li class="skill-title">More</li>
-                        <li>Design lead</li>
-                        <li>Branding</li>
-                        <li>Strategy</li>
-                        <li>Process design</li>
-                        <li>Concept development</li>
-                        <li>Agile methodology</li>
-                        <li>Hyper Island</li>
-                        <li>Toolbox</li>
-                    </ul>
+                <div class="skill-double-column">
+                    <div class="skill-column">
+                        <ul>
+                            <li class="skill-title">Toolbox</li>
+                            <li>Atom</li>
+                            <li>Postman</li>
+                            <li>Adobe Photoshop</li>
+                            <li>Adobe Illustrator</li>
+                            <li>Microsoft Excel</li>
+                            <li>Keynote</li>
+                            <li>Slack</li>
+                        </ul>
+                    </div>
+                    <div class="skill-column">
+                        <ul>
+                            <li class="skill-title">More</li>
+                            <li>Design lead</li>
+                            <li>Branding</li>
+                            <li>Strategy</li>
+                            <li>Process design</li>
+                            <li>Concept development</li>
+                            <li>Agile methodology</li>
+                            <li>Hyper Island</li>
+                            <li>Toolbox</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
