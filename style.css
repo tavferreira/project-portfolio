@@ -148,14 +148,12 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-/* .project-snapshot {
-  position: relative;
-  text-align: center;
-  color: #fddfe7;
-  font-weight: bold;
-} */
+.project-expanded {
+  margin-bottom: 42px;
+}
 
 .project-snapshot {
   background: url("assets/project-small.png") no-repeat padding-box;
@@ -174,6 +172,113 @@ h2 {
   text-align: center;
   color: #fddfe7;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-description {
+  width: 303px;
+}
+
+.project-description p {
+  letter-spacing: 0;
+  text-align: justify;
+  font-size: 16px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  text-align: left;
+  color: #fa382f;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.project-tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+div.tag {
+  background: #fddfe7;
+  font-size: 9px;
+  margin-right: 4px;
+  padding: 3px 6px;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 16px;
+  position: relative;
+  line-height: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #2b2e34;
+}
+
+.other-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.my-thoughts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.article-expanded {
+}
+
+.article-snapshot {
+  background: url("assets/thoughts-small.png") no-repeat padding-box;
+  height: 205px;
+  width: 301px;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.article-description {
+  width: 303px;
+  margin-bottom: 50px;
+}
+
+.article-description p {
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  margin: 0px;
+}
+
+.date {
+  color: #fa382f;
+}
+
+.article-title {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.article-title-collapsed {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.article-collapsed-description {
+  width: 303px;
+  font-family: "Roboto", sans-serif;
+}
+
+.article-collapsed-description p {
+  text-align: left;
+  margin-bottom: 10px;
 }
 
 .skills {
@@ -209,7 +314,7 @@ ul {
   height: 60px;
   background: none;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   cursor: pointer;
 }
 
@@ -227,9 +332,13 @@ ul {
 
 .link-button {
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.link-button a {
+.link-button p {
   font-size: 11px;
   text-transform: uppercase;
   color: #fa382f;
