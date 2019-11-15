@@ -133,6 +133,13 @@ section:nth-child(even) {
   background: #fa382f;
 }
 
+.tech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 h2 {
   padding: 5px;
   display: inline-block;
@@ -142,6 +149,11 @@ h2 {
   font-size: 22px;
   font-weight: 700;
   margin: 0 0 40px 0;
+}
+
+.tech-description {
+  line-height: 29px;
+  width: 303px;
 }
 
 .main-projects {
@@ -179,12 +191,13 @@ h2 {
 
 .project-description {
   width: 303px;
+  font-family: "Roboto", sans-serif;
 }
 
 .project-description p {
   letter-spacing: 0;
   text-align: justify;
-  font-size: 16px;
+  font-size: 17px;
   margin-top: 25px;
   margin-bottom: 10px;
 }
@@ -233,9 +246,6 @@ div.tag {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.article-expanded {
 }
 
 .article-snapshot {
