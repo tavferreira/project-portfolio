@@ -109,8 +109,19 @@ section:nth-child(even) {
   background: #ffffff 0% 0% no-repeat padding-box;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .intro {
   text-align: left;
+}
+
+.intro p {
+  width: 303px;
 }
 
 .line-dot {
@@ -133,12 +144,12 @@ section:nth-child(even) {
   background: #fa382f;
 }
 
-.tech {
+/* .tech {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 h2 {
   padding: 5px;
@@ -156,12 +167,12 @@ h2 {
   width: 303px;
 }
 
-.main-projects {
+/* .main-projects {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+} */
 
 .project-expanded {
   margin-bottom: 42px;
@@ -234,19 +245,19 @@ div.tag {
   color: #2b2e34;
 }
 
-.other-projects {
+/* .other-projects {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+} */
 
-.my-thoughts {
+/* .my-thoughts {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+} */
 
 .article-snapshot {
   background: url("assets/thoughts-small.png") no-repeat padding-box;
@@ -291,8 +302,16 @@ div.tag {
   margin-bottom: 10px;
 }
 
-.skills {
+/* .skills {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+
+.skills-description {
+  display: flex;
+  width: 303px;
 }
 
 .skill-column {
@@ -315,6 +334,7 @@ ul {
 .bottom-links {
   display: flex;
   justify-content: space-evenly;
+  width: 303px;
 }
 
 .bottom-link {
@@ -365,6 +385,13 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 17px;
   letter-spacing: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div {
+  width: 303px;
 }
 
 h3 {
