@@ -34,6 +34,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  text-indent: -9999px;
 }
 
 .linkedin {
@@ -66,7 +67,7 @@ header {
   color: #ffffff;
 }
 
-.header-name-description p {
+.header-name-description h4 {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   text-transform: uppercase;
@@ -197,11 +198,17 @@ h2 {
   background: rgba(23, 3, 3, 0.26);
   vertical-align: middle;
   text-align: center;
-  color: #fddfe7;
+
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.project-title h3 {
+  color: #fddfe7;
+  font-size: 28px;
+  line-height: 34px;
 }
 
 .project-description {
@@ -350,6 +357,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center center;
   cursor: pointer;
+  text-indent: -9999px;
 }
 
 .bottom-linkedin {
@@ -372,7 +380,7 @@ ul {
   align-items: center;
 }
 
-.link-button p {
+.link-button h4 {
   font-size: 11px;
   text-transform: uppercase;
   color: #fa382f;
@@ -638,7 +646,7 @@ footer p {
     background-image: url(assets/stackoverflow-bottom.svg);
   }
 
-  .link-button p {
+  .link-button h4 {
     font-size: 25px;
     line-height: 41px;
   }
@@ -659,9 +667,12 @@ footer p {
   footer h3 {
     color: #fff;
   }
-
-  h4 {
-    margin: 10px;
+  .h4-footer {
     font-weight: bold;
+  }
+
+  footer h4 {
+    margin: 10px;
+    font-weight: unset;
   }
 }
