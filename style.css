@@ -510,7 +510,7 @@ footer p {
   }
 
   .project-snapshot {
-    background: url("assets/project.png") no-repeat padding-box;
+    background: url("assets/project.png") no-repeat padding-box center center;
     height: 309px;
     width: 522px;
   }
