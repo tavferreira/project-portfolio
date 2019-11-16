@@ -67,7 +67,7 @@ header {
 .header-name-description {
   top: 170px;
   position: absolute;
-  width: 70%;
+  width: 245px;
   text-align: left;
   color: #ffffff;
 }
@@ -93,6 +93,14 @@ h1 {
   margin: 5px 0px;
   font-weight: bold;
   letter-spacing: 0;
+  line-height: 49px;
+}
+
+.header-name-description h2 {
+  background-color: unset;
+  text-transform: lowercase;
+  font-size: 24px;
+  line-height: 29px;
 }
 
 .header-picture {
@@ -464,6 +472,12 @@ footer h4 {
 
   h1 {
     font-size: 82px;
+    line-height: 100px;
+  }
+
+  .header-name-description h2 {
+    font-size: 50px;
+    line-height: 61px;
   }
 
   .header-picture {
