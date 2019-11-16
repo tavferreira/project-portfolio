@@ -287,6 +287,11 @@ div.tag {
 
 .date {
   color: #fa382f;
+  text-align: left;
+  margin-bottom: 0px;
+  font-weight: unset;
+  font-size: 17px;
+  line-height: 32px;
 }
 
 .article-title {
@@ -591,10 +596,6 @@ footer p {
 
   .article-collapsed-description {
     width: 1088px;
-  }
-
-  .date {
-    line-height: 29px;
   }
 
   .article-collapsed-description p {
