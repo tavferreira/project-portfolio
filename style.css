@@ -211,7 +211,7 @@ h2 {
 
 .project-description p {
   letter-spacing: 0;
-  text-align: justify;
+  text-align: left;
   font-size: 17px;
   margin-top: 25px;
   margin-bottom: 10px;
@@ -289,6 +289,10 @@ div.tag {
 .article-title {
   font-size: 21px;
   font-weight: bold;
+}
+
+.article-expanded:nth-child(2) {
+  display: none;
 }
 
 .article-title-collapsed {
@@ -511,8 +515,91 @@ footer p {
     width: 522px;
   }
 
+  .project-description {
+    width: 522px;
+  }
+
+  .project-description p {
+    font-size: 25px;
+    line-height: 41px;
+  }
+
+  div.tag {
+    font-size: 16px;
+    line-height: 19px;
+    height: 29px;
+  }
+
   .other-projects {
     width: 1088px;
+  }
+
+  .project-collapsed {
+    width: 1088px;
+  }
+
+  .project-collapsed .project-description {
+    width: 1088px;
+  }
+
+  .main-articles {
+    display: flex;
+    justify-content: space-between;
+    width: 1088px;
+  }
+
+  .article-expanded:nth-child(2) {
+    display: block;
+  }
+
+  .article-snapshot {
+    background: url("assets/thoughts.png") no-repeat padding-box center center;
+    height: 354px;
+    width: 520px;
+  }
+
+  .article-description {
+    width: 520px;
+  }
+
+  .date {
+    font-size: 25px;
+    line-height: 41px;
+  }
+
+  .article-description p {
+    font-size: 25px;
+    line-height: 41px;
+  }
+
+  .article-title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .even-more-thoughts {
+    display: none;
+  }
+
+  .article-collapsed {
+    width: 1088px;
+  }
+
+  .article-collapsed-description {
+    width: 1088px;
+  }
+
+  .date {
+    line-height: 29px;
+  }
+
+  .article-collapsed-description p {
+    font-size: 25px;
+    line-height: 29px;
+  }
+
+  .article-title-collapsed {
+    font-size: 25px;
   }
 
   .skills-description {
