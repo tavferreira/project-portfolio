@@ -380,7 +380,7 @@ ul {
   align-items: center;
 }
 
-.link-button h4 {
+.link-button h3 {
   font-size: 11px;
   text-transform: uppercase;
   color: #fa382f;
@@ -646,7 +646,7 @@ footer p {
     background-image: url(assets/stackoverflow-bottom.svg);
   }
 
-  .link-button h4 {
+  .link-button h3 {
     font-size: 25px;
     line-height: 41px;
   }
