@@ -223,10 +223,6 @@ h2 {
   font-weight: bold;
 }
 
-.link {
-  text-decoration: underline;
-}
-
 .project-tags {
   display: flex;
   flex-direction: row;
