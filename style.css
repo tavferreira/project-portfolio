@@ -14,14 +14,20 @@ header {
   height: 508px;
   border: 1px solid #707070;
   background-color: rgba(23, 3, 3, 0.26);
+  display: flex;
+  justify-content: center;
+}
+
+.main-header-container {
+  width: 303px;
 }
 
 .header-links-menu {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   position: absolute;
   top: 95px;
-  right: 10%;
+  width: 303px;
 }
 
 .header-link {
@@ -59,9 +65,8 @@ header {
 }
 
 .header-name-description {
-  position: absolute;
   top: 170px;
-  left: 10%;
+  position: absolute;
   width: 70%;
   text-align: left;
   color: #ffffff;
@@ -79,6 +84,7 @@ header {
 
 .header-name-description span {
   font-weight: bold;
+  margin-left: 10px;
 }
 
 h1 {
@@ -89,10 +95,15 @@ h1 {
   letter-spacing: 0;
 }
 
+.header-picture {
+  display: flex;
+  justify-content: flex-end;
+  width: 303px;
+}
+
 img.picture {
   position: absolute;
   top: 360px;
-  right: 10%;
   width: 160px;
   border: 3px solid #ffffff;
   border-radius: 50%;
@@ -146,13 +157,6 @@ section {
   background: #fa382f;
 }
 
-/* .tech {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-
 h2 {
   padding: 5px;
   display: inline-block;
@@ -169,12 +173,6 @@ h2 {
   width: 303px;
 }
 
-/* .main-projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-} */
 .projects-column-2 {
   display: none;
 }
@@ -252,20 +250,6 @@ div.tag {
   color: #2b2e34;
 }
 
-/* .other-projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-} */
-
-/* .my-thoughts {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-} */
-
 .article-snapshot {
   background: url("assets/thoughts-small.png") no-repeat padding-box;
   height: 205px;
@@ -317,13 +301,6 @@ div.tag {
   text-align: left;
   margin-bottom: 10px;
 }
-
-/* .skills {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-} */
 
 .skills-description {
   display: flex;
@@ -431,6 +408,15 @@ footer p {
   line-height: 1.5;
 }
 
+.h4-footer {
+  font-weight: bold;
+}
+
+footer h4 {
+  margin: 10px;
+  font-weight: unset;
+}
+
 @media all and (min-width: 768px) and (max-width: 1199px) {
 }
 
@@ -443,9 +429,17 @@ footer p {
     height: 661px;
   }
 
+  .main-header-container {
+    width: 1088px;
+  }
+
   .header-link {
     width: 80px;
     height: 80px;
+  }
+
+  .header-links-menu {
+    width: 1088px;
   }
 
   .linkedin {
@@ -470,6 +464,10 @@ footer p {
 
   h1 {
     font-size: 82px;
+  }
+
+  .header-picture {
+    width: 1088px;
   }
 
   img.picture {
@@ -667,13 +665,5 @@ footer p {
 
   footer h3 {
     color: #fff;
-  }
-  .h4-footer {
-    font-weight: bold;
-  }
-
-  footer h4 {
-    margin: 10px;
-    font-weight: unset;
   }
 }
