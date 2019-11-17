@@ -320,6 +320,7 @@
     
     .article-title-collapsed {
         font-size: 17px;
+        line-height: 29px;
         font-weight: bold;
     }
     
@@ -500,6 +501,16 @@
         .intro p {
             width: 690px;
         }
+        .line-dot {
+            top: 17px;
+            width: 70px;
+            height: 4px;
+        }
+        .line-dot::after {
+            height: 15px;
+            width: 15px;
+            top: -4px;
+        }
         .tech-description {
             width: 690px;
         }
@@ -597,6 +608,9 @@
         }
         .article-collapsed {
             width: 690px;
+        }
+        .article-title-collapsed {
+            font-size: 21px;
         }
         .article-collapsed-description {
             width: 690px;
@@ -817,7 +831,6 @@
         }
         .article-title-collapsed {
             font-size: 25px;
-            line-height: 29px;
         }
         .skills-description {
             width: 1088px;
