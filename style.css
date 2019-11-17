@@ -8,6 +8,7 @@
         background-position: center top;
         box-sizing: border-box;
     }
+    /* Header section  */
     
     header {
         top: 0px;
@@ -118,6 +119,7 @@
         border: 3px solid #ffffff;
         border-radius: 50%;
     }
+    /* Basic style for all sections */
     
     section {
         background: #fdfdeb 0% 0% no-repeat padding-box;
@@ -125,18 +127,17 @@
         padding: 60px 40px;
         text-align: center;
         line-height: 29px;
-    }
-    
-    section:nth-child(even) {
-        background: #ffffff 0% 0% no-repeat padding-box;
-    }
-    
-    section {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+    /* Changes the backgroung color for even sections */
+    
+    section:nth-child(even) {
+        background: #ffffff 0% 0% no-repeat padding-box;
+    }
+    /* Intro section */
     
     .intro {
         text-align: left;
@@ -170,6 +171,7 @@
         border-radius: 50%;
         background: #00818a;
     }
+    /* Styling for all sections */
     
     h2 {
         padding: 5px;
@@ -181,11 +183,13 @@
         font-weight: 700;
         margin: 0 0 40px 0;
     }
+    /* Tech section */
     
     .tech-description {
         line-height: 29px;
         width: 303px;
     }
+    /* Project section */
     
     .projects-column-2 {
         display: none;
@@ -196,13 +200,37 @@
     }
     
     .project-snapshot {
-        background: url("assets/project-small.png");
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: contain;
         height: 177px;
         width: 303px;
         position: relative;
+    }
+    
+    .weather-app {
+        background: url("assets/project-weather.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+    }
+    
+    .pizzabot {
+        background: url("assets/project-pizzabot.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+    }
+    
+    .cluedo {
+        background: url("assets/project-cluedo.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+    }
+    
+    .food-review {
+        background: url("assets/project-food.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
     }
     
     .project-title {
@@ -265,6 +293,7 @@
         font-family: "Roboto", sans-serif;
         color: #2b2e34;
     }
+    /* My Thoughts Section */
     
     .article-snapshot {
         height: 205px;
@@ -274,14 +303,14 @@
     }
     
     .article-1 {
-        background: url("assets/thoughts-small.png");
+        background: url("assets/article-one.png");
         background-repeat: no-repeat;
         background-position: center top;
         background-size: contain;
     }
     
     .article-2 {
-        background: url("assets/thoughts-2-small.png");
+        background: url("assets/article-two.png");
         background-repeat: no-repeat;
         background-position: center top;
         background-size: contain;
@@ -333,15 +362,25 @@
         text-align: left;
         margin-bottom: 10px;
     }
+    /* Skills Section */
     
     .skills-description {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         width: 303px;
     }
     
     .skill-column {
         flex-basis: 50%;
         text-align: center;
+    }
+    
+    .skill-double-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-basis: 50%;
     }
     
     .skill-title {
@@ -355,6 +394,7 @@
         list-style: none;
         padding: 20px 0px;
     }
+    /* For More Section */
     
     .bottom-links {
         display: flex;
@@ -402,6 +442,7 @@
         margin-top: 10px;
         text-decoration: none;
     }
+    /* Footer */
     
     footer {
         background: #09194f;
@@ -423,6 +464,7 @@
     
     h3 {
         font-size: 21px;
+        line-height: 25px;
         text-transform: uppercase;
         font-family: "Montserrat", sans-serif;
         color: #00818a;
@@ -450,6 +492,7 @@
         margin: 10px;
         font-weight: unset;
     }
+    /* Media query for tablets */
     
     @media all and (min-width: 765px) {
         body {
@@ -509,7 +552,7 @@
         .line-dot::after {
             height: 15px;
             width: 15px;
-            top: -4px;
+            top: -5px;
         }
         .tech-description {
             width: 690px;
@@ -531,11 +574,7 @@
             display: block;
         }
         .project-snapshot {
-            background: url("assets/project.png");
-            background-repeat: no-repeat;
-            background-position: center top;
-            background-size: contain;
-            height: 240px;
+            height: 192px;
             width: 330px;
         }
         .project-description {
@@ -557,6 +596,10 @@
         .other-projects {
             width: 690px;
         }
+        h3 {
+            font-size: 30px;
+            line-height: 36px;
+        }
         .project-collapsed {
             width: 690px;
         }
@@ -574,18 +617,6 @@
         .article-snapshot {
             height: 280px;
             width: 330px;
-            background-repeat: no-repeat;
-            background-position: center top;
-            background-size: contain;
-        }
-        .article-1 {
-            background: url("assets/thoughts.png");
-            background-repeat: no-repeat;
-            background-position: center top;
-            background-size: contain;
-        }
-        .article-2 {
-            background: url("assets/thoughts-2.png");
             background-repeat: no-repeat;
             background-position: center top;
             background-size: contain;
@@ -615,20 +646,22 @@
         .article-collapsed-description {
             width: 690px;
         }
+        .skill-column {
+            flex-basis: 30%;
+        }
+        .skill-double-column {
+            flex-direction: row;
+            flex-basis: 60%;
+        }
+        .skill-double-column .skill-column {
+            flex-basis: 30%;
+        }
         .skills-description {
             width: 690px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
         .skill-column {
             flex-basis: 30%;
             text-align: center;
-        }
-        .skill-double-column {
-            display: flex;
-            justify-content: space-around;
-            flex-basis: 60%;
         }
         .bottom-links {
             width: 690px;
@@ -663,6 +696,7 @@
             line-height: 36px;
         }
     }
+    /* Media query for bigger screens (desktop/laptop) */
     
     @media all and (min-width: 1200px) {
         body {
@@ -744,11 +778,7 @@
             display: block;
         }
         .project-snapshot {
-            background: url("assets/project.png");
-            background-repeat: no-repeat;
-            background-position: center top;
-            background-size: contain;
-            height: 309px;
+            height: 305px;
             width: 522px;
         }
         .project-title h3 {
@@ -770,6 +800,10 @@
         .other-projects {
             width: 1088px;
         }
+        h3 {
+            font-size: 38px;
+            line-height: 47px;
+        }
         .project-collapsed {
             width: 1088px;
         }
@@ -787,18 +821,6 @@
         .article-snapshot {
             height: 354px;
             width: 520px;
-        }
-        .article-1 {
-            background: url("assets/thoughts.png");
-            background-repeat: no-repeat;
-            background-position: center top;
-            background-size: contain;
-        }
-        .article-2 {
-            background: url("assets/thoughts-2.png");
-            background-repeat: no-repeat;
-            background-position: center top;
-            background-size: contain;
         }
         .article-description {
             width: 520px;
@@ -834,18 +856,6 @@
         }
         .skills-description {
             width: 1088px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .skill-column {
-            flex-basis: 30%;
-            text-align: center;
-        }
-        .skill-double-column {
-            display: flex;
-            justify-content: space-around;
-            flex-basis: 60%;
         }
         .bottom-links {
             width: 1088px;
