@@ -221,8 +221,8 @@
     
     .project-title h3 {
         color: #f9ce00;
-        font-size: 28px;
-        line-height: 34px;
+        font-size: 16px;
+        line-height: 19px;
     }
     
     .project-description {
@@ -296,6 +296,8 @@
         font-family: "Roboto", sans-serif;
         text-align: left;
         margin: 0px;
+        font-size: 17px;
+        line-height: 32px;
     }
     
     .date {
@@ -407,6 +409,7 @@
         padding: 30px 0px 50px 0px;
         font-family: "Roboto", sans-serif;
         font-size: 17px;
+        line-height: 29px;
         letter-spacing: 0;
         display: flex;
         justify-content: center;
@@ -418,7 +421,7 @@
     }
     
     h3 {
-        font-size: 20px;
+        font-size: 21px;
         text-transform: uppercase;
         font-family: "Montserrat", sans-serif;
         color: #00818a;
@@ -426,6 +429,7 @@
     
     footer h3 {
         color: #fff;
+        line-height: 25px;
     }
     
     h4 {
@@ -446,7 +450,7 @@
         font-weight: unset;
     }
     
-    @media all and (min-width: 768px) {
+    @media all and (min-width: 765px) {
         body {
             background: url("assets/douro-background-tablet.png");
         }
@@ -456,8 +460,36 @@
         .main-header-container {
             width: 690px;
         }
+        .header-name-description {
+            width: 500px;
+        }
+        .header-name-description h4 {
+            font-size: 21px;
+            line-height: 24px;
+        }
+        h1 {
+            font-size: 61px;
+            line-height: 75px;
+        }
+        .header-name-description h2 {
+            font-size: 37px;
+            line-height: 45px;
+        }
         .header-links-menu {
             width: 690px;
+        }
+        .header-link {
+            width: 60px;
+            height: 60px;
+        }
+        .linkedin {
+            background-image: url(assets/linkedin-tablet.svg);
+        }
+        .github {
+            background-image: url(assets/github-tablet.svg);
+        }
+        .stackoverflow {
+            background-image: url(assets/stackoverflow-tablet.svg);
         }
         .header-picture {
             width: 655px;
@@ -470,6 +502,14 @@
         }
         .tech-description {
             width: 690px;
+        }
+        h2 {
+            font-size: 35px;
+            line-height: 43px;
+        }
+        section {
+            font-size: 24px;
+            line-height: 40px;
         }
         .main-projects {
             display: flex;
@@ -489,6 +529,19 @@
         }
         .project-description {
             width: 330px;
+        }
+        .project-title h3 {
+            font-size: 22px;
+            line-height: 27px;
+        }
+        .project-description p {
+            font-size: 21px;
+            line-height: 35px;
+        }
+        div.tag {
+            font-size: 13px;
+            line-height: 15px;
+            height: 23px;
         }
         .other-projects {
             width: 690px;
@@ -529,6 +582,19 @@
         .article-description {
             width: 330px;
         }
+        .date {
+            font-size: 21px;
+            line-height: 37px;
+        }
+        .article-description p {
+            font-size: 21px;
+            line-height: 37px;
+        }
+        .article-title {
+            font-size: 26px;
+            line-height: 37px;
+            font-weight: bold;
+        }
         .article-collapsed {
             width: 690px;
         }
@@ -554,8 +620,33 @@
             width: 690px;
             margin-top: 50px;
         }
+        .bottom-link {
+            width: 110px;
+            height: 110px;
+        }
+        .bottom-linkedin {
+            background-image: url(assets/linkedin-bottom-tablet.svg);
+        }
+        .bottom-github {
+            background-image: url(assets/github-bottom-tablet.svg);
+        }
+        .bottom-stackoverflow {
+            background-image: url(assets/stackoverflow-bottom-tablet.svg);
+        }
+        .link-button h3 {
+            font-size: 18px;
+            line-height: 41px;
+        }
+        footer {
+            font-size: 24px;
+            line-height: 40px;
+        }
         footer div {
             width: 690px;
+        }
+        footer h3 {
+            font-size: 30px;
+            line-height: 36px;
         }
     }
     
@@ -573,9 +664,6 @@
             width: 80px;
             height: 80px;
         }
-        .header-links-menu {
-            width: 1088px;
-        }
         .linkedin {
             background-image: url(assets/linkedin.svg);
         }
@@ -585,11 +673,15 @@
         .stackoverflow {
             background-image: url(assets/stackoverflow.svg);
         }
+        .header-links-menu {
+            width: 1088px;
+        }
         .header-name-description {
             width: 500px;
         }
-        .header-name-description p {
+        .header-name-description h4 {
             font-size: 28px;
+            line-height: 33px;
         }
         h1 {
             font-size: 82px;
@@ -606,8 +698,6 @@
             width: 333px;
         }
         .intro p {
-            font-size: 30px;
-            line-height: 50px;
             width: 1088px;
         }
         .line-dot {
@@ -646,6 +736,10 @@
             background-size: contain;
             height: 309px;
             width: 522px;
+        }
+        .project-title h3 {
+            font-size: 28px;
+            line-height: 34px;
         }
         .project-description {
             width: 522px;
@@ -705,6 +799,7 @@
         }
         .article-title {
             font-size: 30px;
+            line-height: 41px;
             font-weight: bold;
         }
         .even-more-thoughts {
@@ -722,6 +817,7 @@
         }
         .article-title-collapsed {
             font-size: 25px;
+            line-height: 29px;
         }
         .skills-description {
             width: 1088px;
@@ -766,7 +862,8 @@
         footer div {
             width: 1088px;
         }
-        h3 {
+        footer h3 {
             font-size: 38px;
+            line-height: 47px;
         }
     }
