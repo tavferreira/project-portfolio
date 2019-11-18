@@ -606,6 +606,9 @@
         .project-collapsed .project-description {
             width: 690px;
         }
+        .mobile-only {
+            display: none;
+        }
         .main-articles {
             display: flex;
             justify-content: space-between;
