@@ -1,5 +1,4 @@
-    html,
-    body {
+    html, body {
         font-family: "Montserrat", sans-serif;
         margin: 0px;
         padding: 0px;
@@ -8,8 +7,9 @@
         background-position: center top;
         box-sizing: border-box;
     }
+
     /* Header section  */
-    
+
     header {
         top: 0px;
         left: 0px;
@@ -20,11 +20,11 @@
         display: flex;
         justify-content: center;
     }
-    
+
     .main-header-container {
         width: 303px;
     }
-    
+
     .header-links-menu {
         display: flex;
         justify-content: flex-end;
@@ -32,7 +32,7 @@
         top: 95px;
         width: 303px;
     }
-    
+
     .header-link {
         border: 3px solid #fff;
         border-radius: 50%;
@@ -45,28 +45,28 @@
         cursor: pointer;
         text-indent: -9999px;
     }
-    
+
     .linkedin {
         background-image: url(assets/linkedin-small.svg);
     }
-    
+
     .github {
         background-image: url(assets/github-small.svg);
     }
-    
+
     .stackoverflow {
         background-image: url(assets/stackoverflow-small.svg);
     }
-    
+
     .header-link a:hover {
         cursor: pointer;
     }
-    
+
     .header-link img {
         width: 20px;
         height: 20px;
     }
-    
+
     .header-name-description {
         top: 170px;
         position: absolute;
@@ -74,7 +74,7 @@
         text-align: left;
         color: #ffffff;
     }
-    
+
     .header-name-description h4 {
         font-family: "Roboto", sans-serif;
         font-size: 15px;
@@ -84,12 +84,12 @@
         font-weight: 300;
         margin: 1px;
     }
-    
+
     .header-name-description span {
         font-weight: bold;
         margin-left: 10px;
     }
-    
+
     h1 {
         text-transform: lowercase;
         font-size: 40px;
@@ -98,20 +98,20 @@
         letter-spacing: 0;
         line-height: 49px;
     }
-    
+
     .header-name-description h2 {
         background-color: unset;
         text-transform: lowercase;
         font-size: 24px;
         line-height: 29px;
     }
-    
+
     .header-picture {
         display: flex;
         justify-content: flex-end;
         width: 265px;
     }
-    
+
     img.picture {
         position: absolute;
         top: 360px;
@@ -119,8 +119,9 @@
         border: 3px solid #ffffff;
         border-radius: 50%;
     }
+
     /* Basic style for all sections */
-    
+
     section {
         background: #fdfdeb 0% 0% no-repeat padding-box;
         font-size: 17px;
@@ -132,25 +133,27 @@
         justify-content: center;
         align-items: center;
     }
+
     /* Changes the backgroung color for even sections */
-    
+
     section:nth-child(even) {
         background: #ffffff 0% 0% no-repeat padding-box;
     }
+
     /* Intro section */
-    
+
     .intro {
         text-align: left;
     }
-    
+
     .hidden {
         display: none;
     }
-    
+
     .intro p {
         width: 303px;
     }
-    
+
     .line-dot {
         height: 3px;
         width: 50px;
@@ -160,7 +163,7 @@
         top: 12px;
         margin-right: 15px;
     }
-    
+
     .line-dot::after {
         content: "";
         height: 10px;
@@ -171,8 +174,9 @@
         border-radius: 50%;
         background: #00818a;
     }
+
     /* Styling for all sections */
-    
+
     h2 {
         padding: 5px;
         display: inline-block;
@@ -183,56 +187,58 @@
         font-weight: 700;
         margin: 0 0 40px 0;
     }
+
     /* Tech section */
-    
+
     .tech-description {
-        line-height: 29px;
+        line-height: 34px;
         width: 303px;
     }
+
     /* Project section */
-    
+
     .projects-column-2 {
         display: none;
     }
-    
+
     .project-expanded {
         margin-bottom: 42px;
     }
-    
+
     .project-snapshot {
         height: 177px;
         width: 303px;
         position: relative;
     }
-    
+
     .weather-app {
         background: url("assets/project-weather.png");
         background-repeat: no-repeat;
         background-position: center top;
         background-size: contain;
     }
-    
+
     .pizzabot {
         background: url("assets/project-pizzabot.png");
         background-repeat: no-repeat;
         background-position: center top;
         background-size: contain;
     }
-    
+
     .cluedo {
         background: url("assets/project-cluedo.png");
         background-repeat: no-repeat;
         background-position: center top;
         background-size: contain;
     }
-    
+
     .food-review {
         background: url("assets/project-food.png");
         background-repeat: no-repeat;
         background-position: center top;
         background-size: contain;
     }
-    
+
     .project-title {
         position: absolute;
         text-transform: uppercase;
@@ -246,18 +252,18 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     .project-title h3 {
         color: #f9ce00;
         font-size: 16px;
         line-height: 19px;
     }
-    
+
     .project-description {
         width: 303px;
         font-family: "Roboto", sans-serif;
     }
-    
+
     .project-description p {
         letter-spacing: 0;
         text-align: left;
@@ -265,13 +271,13 @@
         margin-top: 25px;
         margin-bottom: 10px;
     }
-    
+
     .highlight {
         text-align: left;
         color: #00818a;
         font-weight: bold;
     }
-    
+
     .project-tags {
         display: flex;
         flex-direction: row;
@@ -279,7 +285,7 @@
         width: 100%;
         margin: 10px 0px;
     }
-    
+
     div.tag {
         background: #f9ce00;
         font-size: 9px;
@@ -293,34 +299,35 @@
         font-family: "Roboto", sans-serif;
         color: #2b2e34;
     }
+
     /* My Thoughts Section */
-    
+
     .article-snapshot {
         height: 205px;
         width: 301px;
         position: relative;
         margin-bottom: 35px;
     }
-    
+
     .article-1 {
         background: url("assets/article-one.png");
         background-repeat: no-repeat;
         background-position: center top;
         background-size: contain;
     }
-    
+
     .article-2 {
         background: url("assets/article-two.png");
         background-repeat: no-repeat;
         background-position: center top;
         background-size: contain;
     }
-    
+
     .article-description {
         width: 303px;
         margin-bottom: 50px;
     }
-    
+
     .article-description p {
         font-family: "Roboto", sans-serif;
         text-align: left;
@@ -328,7 +335,7 @@
         font-size: 17px;
         line-height: 32px;
     }
-    
+
     .date {
         color: #00818a;
         text-align: left;
@@ -337,71 +344,73 @@
         font-size: 17px;
         line-height: 32px;
     }
-    
+
     .article-title {
         font-size: 21px;
         font-weight: bold;
     }
-    
+
     .article-expanded:nth-child(2) {
         display: none;
     }
-    
+
     .article-title-collapsed {
         font-size: 17px;
         line-height: 29px;
         font-weight: bold;
     }
-    
+
     .article-collapsed-description {
         width: 303px;
         font-family: "Roboto", sans-serif;
     }
-    
+
     .article-collapsed-description p {
         text-align: left;
         margin-bottom: 10px;
     }
+
     /* Skills Section */
-    
+
     .skills-description {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         width: 303px;
     }
-    
+
     .skill-column {
         flex-basis: 50%;
         text-align: center;
     }
-    
+
     .skill-double-column {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         flex-basis: 50%;
     }
-    
+
     .skill-title {
         color: #00818a;
         text-transform: uppercase;
         margin: 10px;
         font-weight: bold;
     }
-    
+
     ul {
         list-style: none;
         padding: 20px 0px;
     }
+
     /* For More Section */
-    
+
     .bottom-links {
         display: flex;
         justify-content: space-evenly;
         width: 303px;
     }
-    
+
     .bottom-link {
         border: 3px solid #00818a;
         border-radius: 50%;
@@ -413,19 +422,19 @@
         cursor: pointer;
         text-indent: -9999px;
     }
-    
+
     .bottom-linkedin {
         background-image: url(assets/linkedin-bottom-small.svg);
     }
-    
+
     .bottom-github {
         background-image: url(assets/github-bottom-small.svg);
     }
-    
+
     .bottom-stackoverflow {
         background-image: url(assets/stackoverflow-bottom-small.svg);
     }
-    
+
     .link-button {
         width: 30%;
         display: flex;
@@ -433,7 +442,7 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     .link-button h3 {
         font-size: 11px;
         text-transform: uppercase;
@@ -442,8 +451,9 @@
         margin-top: 10px;
         text-decoration: none;
     }
+
     /* Footer */
-    
+
     footer {
         background: #09194f;
         color: #fff;
@@ -457,11 +467,11 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     footer div {
         width: 303px;
     }
-    
+
     h3 {
         font-size: 21px;
         line-height: 25px;
@@ -469,31 +479,32 @@
         font-family: "Montserrat", sans-serif;
         color: #00818a;
     }
-    
+
     footer h3 {
         color: #fff;
         line-height: 25px;
     }
-    
+
     h4 {
         margin: 10px;
         font-weight: bold;
     }
-    
+
     footer p {
         line-height: 1.5;
     }
-    
+
     .h4-footer {
         font-weight: bold;
     }
-    
+
     footer h4 {
         margin: 10px;
         font-weight: unset;
     }
+
     /* Media query for tablets */
-    
+
     @media all and (min-width: 765px) {
         body {
             background: url("assets/douro-background-tablet.png");
@@ -556,6 +567,7 @@
         }
         .tech-description {
             width: 690px;
+            line-height: 39px;
         }
         h2 {
             font-size: 35px;
@@ -699,8 +711,9 @@
             line-height: 36px;
         }
     }
+
     /* Media query for bigger screens (desktop/laptop) */
-    
+
     @media all and (min-width: 1200px) {
         body {
             background: url("assets/douro-background.png");
@@ -771,6 +784,7 @@
         }
         .tech-description {
             width: 1088px;
+            line-height: 49px;
         }
         .main-projects {
             display: flex;
