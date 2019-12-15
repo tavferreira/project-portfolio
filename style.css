@@ -211,6 +211,34 @@
         position: relative;
     }
 
+    .proj-movies {
+        background: url("assets/project-movies.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+    }
+
+    .happy-thoughts {
+        background: url("assets/project-happy-thoughts.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+    }
+
+    .survey {
+        background: url("assets/project-survey.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+    }
+
+    .music {
+        background: url("assets/project-music.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+    }
+
     .weather-app {
         background: url("assets/project-weather.png");
         background-repeat: no-repeat;
