@@ -103,7 +103,7 @@ h1 {
 .header-name-description h2 {
   background-color: unset;
   text-transform: lowercase;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 29px;
 }
 
@@ -126,7 +126,7 @@ img.picture {
 section {
   background: #fdfdeb 0% 0% no-repeat padding-box;
   font-size: 17px;
-  padding: 60px 40px;
+  padding: 20px 40px;
   text-align: center;
   line-height: 29px;
   display: flex;
@@ -186,7 +186,7 @@ h2 {
   color: #fff;
   font-size: 22px;
   font-weight: 700;
-  margin: 0 0 40px 0;
+  margin: 10px 0px 20px 0px;
 }
 
 /* Tech section */
@@ -214,7 +214,6 @@ h2 {
 
 a {
   text-decoration: none;
-  color: #000;
 }
 
 .proj-movies {
@@ -362,6 +361,7 @@ div.tag {
 .article-description {
   width: 303px;
   margin-bottom: 50px;
+  color: #000;
 }
 
 .article-description p {
@@ -394,6 +394,7 @@ div.tag {
   font-size: 17px;
   line-height: 29px;
   font-weight: bold;
+  color: #000;
 }
 
 .article-collapsed-description {
@@ -436,7 +437,7 @@ div.tag {
 
 ul {
   list-style: none;
-  padding: 20px 0px;
+  padding: 0px 0px;
 }
 
 /* For More Section */
@@ -502,6 +503,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 15px 0px;
 }
 
 footer div {
@@ -519,6 +521,7 @@ h3 {
 footer h3 {
   color: #fff;
   line-height: 25px;
+  margin-top: 5px;
 }
 
 h4 {
@@ -537,6 +540,7 @@ footer p {
 footer h4 {
   margin: 10px;
   font-weight: unset;
+  margin-bottom: 5px;
 }
 
 /* Media query for tablets */
@@ -559,19 +563,19 @@ footer h4 {
     line-height: 24px;
   }
   h1 {
-    font-size: 61px;
-    line-height: 75px;
+    font-size: 50px;
+    line-height: 55px;
   }
   .header-name-description h2 {
-    font-size: 37px;
+    font-size: 25px;
     line-height: 45px;
   }
   .header-links-menu {
     width: 690px;
   }
   .header-link {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
   .linkedin {
     background-image: url(assets/linkedin-tablet.svg);
@@ -716,11 +720,11 @@ footer h4 {
   }
   .bottom-links {
     width: 690px;
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .bottom-link {
-    width: 110px;
-    height: 110px;
+    width: 80px;
+    height: 80px;
   }
   .bottom-linkedin {
     background-image: url(assets/linkedin-bottom-tablet.svg);
@@ -738,6 +742,7 @@ footer h4 {
   footer {
     font-size: 24px;
     line-height: 40px;
+    padding: 20px 0px;
   }
   footer div {
     width: 690px;
@@ -761,10 +766,10 @@ footer h4 {
     width: 1088px;
   }
   .header-link {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
-  .linkedin {
+  /* .linkedin {
     background-image: url(assets/linkedin.svg);
   }
   .github {
@@ -772,24 +777,24 @@ footer h4 {
   }
   .stackoverflow {
     background-image: url(assets/stackoverflow.svg);
-  }
+  } */
   .header-links-menu {
     width: 1088px;
   }
   .header-name-description {
-    width: 500px;
+    width: 600px;
   }
   .header-name-description h4 {
     font-size: 28px;
-    line-height: 33px;
+    line-height: 30px;
   }
   h1 {
-    font-size: 82px;
-    line-height: 100px;
+    font-size: 65px;
+    line-height: 70px;
   }
   .header-name-description h2 {
-    font-size: 50px;
-    line-height: 61px;
+    font-size: 30px;
+    line-height: 40px;
   }
   .header-picture {
     width: 1050px;
@@ -811,8 +816,8 @@ footer h4 {
     top: -6px;
   }
   h2 {
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 40px;
+    line-height: 45px;
   }
   section {
     font-size: 30px;
@@ -854,7 +859,7 @@ footer h4 {
     width: 1088px;
   }
   h3 {
-    font-size: 38px;
+    font-size: 35px;
     line-height: 47px;
   }
   .project-collapsed {
@@ -915,8 +920,8 @@ footer h4 {
     margin-top: 50px;
   }
   .bottom-link {
-    width: 160px;
-    height: 160px;
+    width: 120px;
+    height: 120px;
   }
   .bottom-linkedin {
     background-image: url(assets/linkedin-bottom.svg);
@@ -934,6 +939,7 @@ footer h4 {
   footer {
     font-size: 30px;
     line-height: 50px;
+    padding: 30px 0px;
   }
   footer div {
     width: 1088px;
@@ -941,5 +947,6 @@ footer h4 {
   footer h3 {
     font-size: 38px;
     line-height: 47px;
+    margin-top: 10px;
   }
 }
