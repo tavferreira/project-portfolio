@@ -1,937 +1,945 @@
-    html, body {
-        font-family: "Montserrat", sans-serif;
-        margin: 0px;
-        padding: 0px;
-        background: url("assets/douro-background-mobile.png");
-        background-repeat: no-repeat;
-        background-position: center top;
-        box-sizing: border-box;
-    }
-
-    /* Header section  */
-
-    header {
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 508px;
-        border: 1px solid #707070;
-        background-color: rgba(23, 3, 3, 0.26);
-        display: flex;
-        justify-content: center;
-    }
-
-    .main-header-container {
-        width: 303px;
-    }
-
-    .header-links-menu {
-        display: flex;
-        justify-content: flex-end;
-        position: absolute;
-        top: 95px;
-        width: 303px;
-    }
-
-    .header-link {
-        border: 3px solid #fff;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        margin-left: 5px;
-        background: none;
-        background-repeat: no-repeat;
-        background-position: center;
-        cursor: pointer;
-        text-indent: -9999px;
-    }
-
-    .linkedin {
-        background-image: url(assets/linkedin-small.svg);
-    }
-
-    .github {
-        background-image: url(assets/github-small.svg);
-    }
-
-    .stackoverflow {
-        background-image: url(assets/stackoverflow-small.svg);
-    }
-
-    .header-link a:hover {
-        cursor: pointer;
-    }
-
-    .header-link img {
-        width: 20px;
-        height: 20px;
-    }
-
-    .header-name-description {
-        top: 170px;
-        position: absolute;
-        width: 260px;
-        text-align: left;
-        color: #ffffff;
-    }
-
-    .header-name-description h4 {
-        font-family: "Roboto", sans-serif;
-        font-size: 15px;
-        text-transform: uppercase;
-        letter-spacing: 1.15px;
-        color: #ffffff;
-        font-weight: 300;
-        margin: 1px;
-    }
-
-    .header-name-description span {
-        font-weight: bold;
-        margin-left: 10px;
-    }
-
-    h1 {
-        text-transform: lowercase;
-        font-size: 40px;
-        margin: 5px 0px;
-        font-weight: bold;
-        letter-spacing: 0;
-        line-height: 49px;
-    }
-
-    .header-name-description h2 {
-        background-color: unset;
-        text-transform: lowercase;
-        font-size: 24px;
-        line-height: 29px;
-    }
-
-    .header-picture {
-        display: flex;
-        justify-content: flex-end;
-        width: 265px;
-    }
-
-    img.picture {
-        position: absolute;
-        top: 360px;
-        width: 160px;
-        border: 3px solid #ffffff;
-        border-radius: 50%;
-    }
-
-    /* Basic style for all sections */
-
-    section {
-        background: #fdfdeb 0% 0% no-repeat padding-box;
-        font-size: 17px;
-        padding: 60px 40px;
-        text-align: center;
-        line-height: 29px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* Changes the backgroung color for even sections */
-
-    section:nth-child(even) {
-        background: #ffffff 0% 0% no-repeat padding-box;
-    }
-
-    /* Intro section */
-
-    .intro {
-        text-align: left;
-    }
-
-    .hidden {
-        display: none;
-    }
-
-    .intro p {
-        width: 303px;
-    }
-
-    .line-dot {
-        height: 3px;
-        width: 50px;
-        background: #00818a;
-        position: relative;
-        float: left;
-        top: 12px;
-        margin-right: 15px;
-    }
-
-    .line-dot::after {
-        content: "";
-        height: 10px;
-        width: 10px;
-        position: relative;
-        float: right;
-        top: -3px;
-        border-radius: 50%;
-        background: #00818a;
-    }
-
-    /* Styling for all sections */
-
-    h2 {
-        padding: 5px;
-        display: inline-block;
-        text-transform: uppercase;
-        background: #00818a;
-        color: #fff;
-        font-size: 22px;
-        font-weight: 700;
-        margin: 0 0 40px 0;
-    }
-
-    /* Tech section */
-
-    .tech-description {
-        line-height: 34px;
-        width: 303px;
-    }
-
-    /* Project section */
-
-    .projects-column-2 {
-        display: none;
-    }
-
-    .project-expanded {
-        margin-bottom: 42px;
-    }
-
-    .project-snapshot {
-        height: 177px;
-        width: 303px;
-        position: relative;
-    }
-
-    .proj-movies {
-        background: url("assets/project-movies.jpg");
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: contain;
-    }
-
-    .happy-thoughts {
-        background: url("assets/project-happy-thoughts.png");
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: contain;
-    }
-
-    .survey {
-        background: url("assets/project-survey.png");
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: contain;
-    }
-
-    .music {
-        background: url("assets/project-music.png");
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: contain;
-    }
-
-    .weather-app {
-        background: url("assets/project-weather.png");
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: contain;
-    }
-
-    .pizzabot {
-        background: url("assets/project-pizzabot.png");
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: contain;
-    }
-
-    .cluedo {
-        background: url("assets/project-cluedo.png");
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: contain;
-    }
-
-    .food-review {
-        background: url("assets/project-food.png");
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: contain;
-    }
-
-    .project-title {
-        position: absolute;
-        text-transform: uppercase;
-        width: 100%;
-        height: 100%;
-        background: rgba(23, 3, 3, 0.26);
-        vertical-align: middle;
-        text-align: center;
-        font-weight: bold;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .project-title h3 {
-        color: #f9ce00;
-        font-size: 16px;
-        line-height: 19px;
-    }
-
-    .project-description {
-        width: 303px;
-        font-family: "Roboto", sans-serif;
-    }
-
-    .project-description p {
-        letter-spacing: 0;
-        text-align: left;
-        font-size: 17px;
-        margin-top: 25px;
-        margin-bottom: 10px;
-    }
-
-    .highlight {
-        text-align: left;
-        color: #00818a;
-        font-weight: bold;
-    }
-
-    .project-tags {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        width: 100%;
-        margin: 10px 0px;
-    }
-
-    div.tag {
-        background: #f9ce00;
-        font-size: 9px;
-        margin-right: 4px;
-        padding: 3px 6px;
-        display: inline-block;
-        box-sizing: border-box;
-        height: 16px;
-        position: relative;
-        line-height: 10px;
-        font-family: "Roboto", sans-serif;
-        color: #2b2e34;
-    }
-
-    /* My Thoughts Section */
-
-    .article-snapshot {
-        height: 205px;
-        width: 301px;
-        position: relative;
-        margin-bottom: 35px;
-    }
-
-    .article-1 {
-        background: url("assets/article-one.png");
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: contain;
-    }
-
-    .article-2 {
-        background: url("assets/article-two.png");
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: contain;
-    }
-
-    .article-description {
-        width: 303px;
-        margin-bottom: 50px;
-    }
-
-    .article-description p {
-        font-family: "Roboto", sans-serif;
-        text-align: left;
-        margin: 0px;
-        font-size: 17px;
-        line-height: 32px;
-    }
-
-    .date {
-        color: #00818a;
-        text-align: left;
-        margin-bottom: 0px;
-        font-weight: unset;
-        font-size: 17px;
-        line-height: 32px;
-    }
-
-    .article-title {
-        font-size: 21px;
-        font-weight: bold;
-    }
-
-    .article-expanded:nth-child(2) {
-        display: none;
-    }
-
-    .article-title-collapsed {
-        font-size: 17px;
-        line-height: 29px;
-        font-weight: bold;
-    }
-
-    .article-collapsed-description {
-        width: 303px;
-        font-family: "Roboto", sans-serif;
-    }
-
-    .article-collapsed-description p {
-        text-align: left;
-        margin-bottom: 10px;
-    }
-
-    /* Skills Section */
-
-    .skills-description {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 303px;
-    }
-
-    .skill-column {
-        flex-basis: 50%;
-        text-align: center;
-    }
-
-    .skill-double-column {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        flex-basis: 50%;
-    }
-
-    .skill-title {
-        color: #00818a;
-        text-transform: uppercase;
-        margin: 10px;
-        font-weight: bold;
-    }
-
-    ul {
-        list-style: none;
-        padding: 20px 0px;
-    }
-
-    /* For More Section */
-
-    .bottom-links {
-        display: flex;
-        justify-content: space-evenly;
-        width: 303px;
-    }
-
-    .bottom-link {
-        border: 3px solid #00818a;
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        background: none;
-        background-repeat: no-repeat;
-        background-position: center center;
-        cursor: pointer;
-        text-indent: -9999px;
-    }
-
-    .bottom-linkedin {
-        background-image: url(assets/linkedin-bottom-small.svg);
-    }
-
-    .bottom-github {
-        background-image: url(assets/github-bottom-small.svg);
-    }
-
-    .bottom-stackoverflow {
-        background-image: url(assets/stackoverflow-bottom-small.svg);
-    }
-
-    .link-button {
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .link-button h3 {
-        font-size: 11px;
-        text-transform: uppercase;
-        color: #00818a;
-        font-weight: bold;
-        margin-top: 10px;
-        text-decoration: none;
-    }
-
-    /* Footer */
-
-    footer {
-        background: #09194f;
-        color: #fff;
-        text-align: center;
-        padding: 30px 0px 50px 0px;
-        font-family: "Roboto", sans-serif;
-        font-size: 17px;
-        line-height: 29px;
-        letter-spacing: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    footer div {
-        width: 303px;
-    }
-
-    h3 {
-        font-size: 21px;
-        line-height: 25px;
-        text-transform: uppercase;
-        font-family: "Montserrat", sans-serif;
-        color: #00818a;
-    }
-
-    footer h3 {
-        color: #fff;
-        line-height: 25px;
-    }
-
-    h4 {
-        margin: 10px;
-        font-weight: bold;
-    }
-
-    footer p {
-        line-height: 1.5;
-    }
-
-    .h4-footer {
-        font-weight: bold;
-    }
-
-    footer h4 {
-        margin: 10px;
-        font-weight: unset;
-    }
-
-    /* Media query for tablets */
-
-    @media all and (min-width: 765px) {
-        body {
-            background: url("assets/douro-background-tablet.png");
-        }
-        header {
-            height: 580px;
-        }
-        .main-header-container {
-            width: 690px;
-        }
-        .header-name-description {
-            width: 500px;
-        }
-        .header-name-description h4 {
-            font-size: 21px;
-            line-height: 24px;
-        }
-        h1 {
-            font-size: 61px;
-            line-height: 75px;
-        }
-        .header-name-description h2 {
-            font-size: 37px;
-            line-height: 45px;
-        }
-        .header-links-menu {
-            width: 690px;
-        }
-        .header-link {
-            width: 60px;
-            height: 60px;
-        }
-        .linkedin {
-            background-image: url(assets/linkedin-tablet.svg);
-        }
-        .github {
-            background-image: url(assets/github-tablet.svg);
-        }
-        .stackoverflow {
-            background-image: url(assets/stackoverflow-tablet.svg);
-        }
-        .header-picture {
-            width: 655px;
-        }
-        img.picture {
-            width: 240px;
-        }
-        .intro p {
-            width: 690px;
-        }
-        .line-dot {
-            top: 17px;
-            width: 70px;
-            height: 4px;
-        }
-        .line-dot::after {
-            height: 15px;
-            width: 15px;
-            top: -5px;
-        }
-        .tech-description {
-            width: 690px;
-            line-height: 39px;
-        }
-        h2 {
-            font-size: 35px;
-            line-height: 43px;
-        }
-        section {
-            font-size: 24px;
-            line-height: 40px;
-        }
-        .main-projects {
-            display: flex;
-            justify-content: space-between;
-            width: 690px;
-        }
-        .projects-column-2 {
-            display: block;
-        }
-        .project-snapshot {
-            height: 192px;
-            width: 330px;
-        }
-        .project-description {
-            width: 330px;
-        }
-        .project-title h3 {
-            font-size: 22px;
-            line-height: 27px;
-        }
-        .project-description p {
-            font-size: 21px;
-            line-height: 35px;
-        }
-        div.tag {
-            font-size: 13px;
-            line-height: 15px;
-            height: 23px;
-        }
-        .other-projects {
-            width: 690px;
-        }
-        h3 {
-            font-size: 30px;
-            line-height: 36px;
-        }
-        .project-collapsed {
-            width: 690px;
-        }
-        .project-collapsed .project-description {
-            width: 690px;
-        }
-        .mobile-only {
-            display: none;
-        }
-        .main-articles {
-            display: flex;
-            justify-content: space-between;
-            width: 690px;
-        }
-        .article-expanded:nth-child(2) {
-            display: block;
-        }
-        .article-snapshot {
-            height: 280px;
-            width: 330px;
-            background-repeat: no-repeat;
-            background-position: center top;
-            background-size: contain;
-        }
-        .article-description {
-            width: 330px;
-        }
-        .date {
-            font-size: 21px;
-            line-height: 37px;
-        }
-        .article-description p {
-            font-size: 21px;
-            line-height: 37px;
-        }
-        .article-title {
-            font-size: 26px;
-            line-height: 37px;
-            font-weight: bold;
-        }
-        .article-collapsed {
-            width: 690px;
-        }
-        .article-title-collapsed {
-            font-size: 21px;
-        }
-        .article-collapsed-description {
-            width: 690px;
-        }
-        .skill-column {
-            flex-basis: 30%;
-        }
-        .skill-double-column {
-            flex-direction: row;
-            flex-basis: 60%;
-        }
-        .skill-double-column .skill-column {
-            flex-basis: 30%;
-        }
-        .skills-description {
-            width: 690px;
-        }
-        .skill-column {
-            flex-basis: 30%;
-            text-align: center;
-        }
-        .bottom-links {
-            width: 690px;
-            margin-top: 50px;
-        }
-        .bottom-link {
-            width: 110px;
-            height: 110px;
-        }
-        .bottom-linkedin {
-            background-image: url(assets/linkedin-bottom-tablet.svg);
-        }
-        .bottom-github {
-            background-image: url(assets/github-bottom-tablet.svg);
-        }
-        .bottom-stackoverflow {
-            background-image: url(assets/stackoverflow-bottom-tablet.svg);
-        }
-        .link-button h3 {
-            font-size: 18px;
-            line-height: 41px;
-        }
-        footer {
-            font-size: 24px;
-            line-height: 40px;
-        }
-        footer div {
-            width: 690px;
-        }
-        footer h3 {
-            font-size: 30px;
-            line-height: 36px;
-        }
-    }
-
-    /* Media query for bigger screens (desktop/laptop) */
-
-    @media all and (min-width: 1200px) {
-        body {
-            background: url("assets/douro-background.png");
-        }
-        header {
-            height: 661px;
-        }
-        .main-header-container {
-            width: 1088px;
-        }
-        .header-link {
-            width: 80px;
-            height: 80px;
-        }
-        .linkedin {
-            background-image: url(assets/linkedin.svg);
-        }
-        .github {
-            background-image: url(assets/github.svg);
-        }
-        .stackoverflow {
-            background-image: url(assets/stackoverflow.svg);
-        }
-        .header-links-menu {
-            width: 1088px;
-        }
-        .header-name-description {
-            width: 500px;
-        }
-        .header-name-description h4 {
-            font-size: 28px;
-            line-height: 33px;
-        }
-        h1 {
-            font-size: 82px;
-            line-height: 100px;
-        }
-        .header-name-description h2 {
-            font-size: 50px;
-            line-height: 61px;
-        }
-        .header-picture {
-            width: 1050px;
-        }
-        img.picture {
-            width: 333px;
-        }
-        .intro p {
-            width: 1088px;
-        }
-        .line-dot {
-            top: 22px;
-            width: 90px;
-            height: 5px;
-        }
-        .line-dot::after {
-            height: 20px;
-            width: 20px;
-            top: -6px;
-        }
-        h2 {
-            font-size: 48px;
-            line-height: 58px;
-        }
-        section {
-            font-size: 30px;
-            line-height: 50px;
-        }
-        .tech-description {
-            width: 1088px;
-            line-height: 49px;
-        }
-        .main-projects {
-            display: flex;
-            justify-content: space-between;
-            width: 1088px;
-        }
-        .projects-column-2 {
-            display: block;
-        }
-        .project-snapshot {
-            height: 305px;
-            width: 522px;
-        }
-        .project-title h3 {
-            font-size: 28px;
-            line-height: 34px;
-        }
-        .project-description {
-            width: 522px;
-        }
-        .project-description p {
-            font-size: 25px;
-            line-height: 41px;
-        }
-        div.tag {
-            font-size: 16px;
-            line-height: 19px;
-            height: 29px;
-        }
-        .other-projects {
-            width: 1088px;
-        }
-        h3 {
-            font-size: 38px;
-            line-height: 47px;
-        }
-        .project-collapsed {
-            width: 1088px;
-        }
-        .project-collapsed .project-description {
-            width: 1088px;
-        }
-        .main-articles {
-            display: flex;
-            justify-content: space-between;
-            width: 1088px;
-        }
-        .article-expanded:nth-child(2) {
-            display: block;
-        }
-        .article-snapshot {
-            height: 354px;
-            width: 520px;
-        }
-        .article-description {
-            width: 520px;
-        }
-        .date {
-            font-size: 25px;
-            line-height: 41px;
-        }
-        .article-description p {
-            font-size: 25px;
-            line-height: 41px;
-        }
-        .article-title {
-            font-size: 30px;
-            line-height: 41px;
-            font-weight: bold;
-        }
-        .even-more-thoughts {
-            display: none;
-        }
-        .article-collapsed {
-            width: 1088px;
-        }
-        .article-collapsed-description {
-            width: 1088px;
-        }
-        .article-collapsed-description p {
-            font-size: 25px;
-            line-height: 29px;
-        }
-        .article-title-collapsed {
-            font-size: 25px;
-        }
-        .skills-description {
-            width: 1088px;
-        }
-        .bottom-links {
-            width: 1088px;
-            margin-top: 50px;
-        }
-        .bottom-link {
-            width: 160px;
-            height: 160px;
-        }
-        .bottom-linkedin {
-            background-image: url(assets/linkedin-bottom.svg);
-        }
-        .bottom-github {
-            background-image: url(assets/github-bottom.svg);
-        }
-        .bottom-stackoverflow {
-            background-image: url(assets/stackoverflow-bottom.svg);
-        }
-        .link-button h3 {
-            font-size: 25px;
-            line-height: 41px;
-        }
-        footer {
-            font-size: 30px;
-            line-height: 50px;
-        }
-        footer div {
-            width: 1088px;
-        }
-        footer h3 {
-            font-size: 38px;
-            line-height: 47px;
-        }
-    }
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background: url("assets/douro-background-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  box-sizing: border-box;
+}
+
+/* Header section  */
+
+header {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 508px;
+  border: 1px solid #707070;
+  background-color: rgba(23, 3, 3, 0.26);
+  display: flex;
+  justify-content: center;
+}
+
+.main-header-container {
+  width: 303px;
+}
+
+.header-links-menu {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 95px;
+  width: 303px;
+}
+
+.header-link {
+  border: 3px solid #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+  background: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+.linkedin {
+  background-image: url(assets/linkedin-small.svg);
+}
+
+.github {
+  background-image: url(assets/github-small.svg);
+}
+
+.stackoverflow {
+  background-image: url(assets/stackoverflow-small.svg);
+}
+
+.header-link a:hover {
+  cursor: pointer;
+}
+
+.header-link img {
+  width: 20px;
+  height: 20px;
+}
+
+.header-name-description {
+  top: 170px;
+  position: absolute;
+  width: 260px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.header-name-description h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.15px;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 1px;
+}
+
+.header-name-description span {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+h1 {
+  text-transform: lowercase;
+  font-size: 40px;
+  margin: 5px 0px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 49px;
+}
+
+.header-name-description h2 {
+  background-color: unset;
+  text-transform: lowercase;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.header-picture {
+  display: flex;
+  justify-content: flex-end;
+  width: 265px;
+}
+
+img.picture {
+  position: absolute;
+  top: 360px;
+  width: 160px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+}
+
+/* Basic style for all sections */
+
+section {
+  background: #fdfdeb 0% 0% no-repeat padding-box;
+  font-size: 17px;
+  padding: 60px 40px;
+  text-align: center;
+  line-height: 29px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Changes the backgroung color for even sections */
+
+section:nth-child(even) {
+  background: #ffffff 0% 0% no-repeat padding-box;
+}
+
+/* Intro section */
+
+.intro {
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}
+
+.intro p {
+  width: 303px;
+}
+
+.line-dot {
+  height: 3px;
+  width: 50px;
+  background: #00818a;
+  position: relative;
+  float: left;
+  top: 12px;
+  margin-right: 15px;
+}
+
+.line-dot::after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  position: relative;
+  float: right;
+  top: -3px;
+  border-radius: 50%;
+  background: #00818a;
+}
+
+/* Styling for all sections */
+
+h2 {
+  padding: 5px;
+  display: inline-block;
+  text-transform: uppercase;
+  background: #00818a;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 40px 0;
+}
+
+/* Tech section */
+
+.tech-description {
+  line-height: 34px;
+  width: 303px;
+}
+
+/* Project section */
+
+.projects-column-2 {
+  display: none;
+}
+
+.project-expanded {
+  margin-bottom: 42px;
+}
+
+.project-snapshot {
+  height: 177px;
+  width: 303px;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.proj-movies {
+  background: url("assets/project-movies.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+.happy-thoughts {
+  background: url("assets/project-happy-thoughts.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+.survey {
+  background: url("assets/project-survey.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+.music {
+  background: url("assets/project-music.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+.weather-app {
+  background: url("assets/project-weather.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+.pizzabot {
+  background: url("assets/project-pizzabot.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+.cluedo {
+  background: url("assets/project-cluedo.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+.food-review {
+  background: url("assets/project-food.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+.project-title {
+  position: absolute;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+  background: rgba(23, 3, 3, 0.26);
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-title h3 {
+  color: #f9ce00;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.project-description {
+  width: 303px;
+  font-family: "Roboto", sans-serif;
+}
+
+.project-description p {
+  letter-spacing: 0;
+  text-align: left;
+  font-size: 17px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: normal;
+}
+
+.highlight {
+  text-align: left;
+  color: #00818a;
+  font-weight: bold;
+}
+
+.project-tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+div.tag {
+  background: #f9ce00;
+  font-size: 9px;
+  margin-right: 4px;
+  padding: 3px 6px;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 16px;
+  position: relative;
+  line-height: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #2b2e34;
+}
+
+/* My Thoughts Section */
+
+.article-snapshot {
+  height: 205px;
+  width: 301px;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.article-1 {
+  background: url("assets/article-one.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+.article-2 {
+  background: url("assets/article-two.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+.article-description {
+  width: 303px;
+  margin-bottom: 50px;
+}
+
+.article-description p {
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  margin: 0px;
+  font-size: 17px;
+  line-height: 32px;
+}
+
+.date {
+  color: #00818a;
+  text-align: left;
+  margin-bottom: 0px;
+  font-weight: unset;
+  font-size: 17px;
+  line-height: 32px;
+}
+
+.article-title {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.article-expanded:nth-child(2) {
+  display: none;
+}
+
+.article-title-collapsed {
+  font-size: 17px;
+  line-height: 29px;
+  font-weight: bold;
+}
+
+.article-collapsed-description {
+  width: 303px;
+  font-family: "Roboto", sans-serif;
+}
+
+.article-collapsed-description p {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* Skills Section */
+
+.skills-description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 303px;
+}
+
+.skill-column {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.skill-double-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-basis: 50%;
+}
+
+.skill-title {
+  color: #00818a;
+  text-transform: uppercase;
+  margin: 10px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 20px 0px;
+}
+
+/* For More Section */
+
+.bottom-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 303px;
+}
+
+.bottom-link {
+  border: 3px solid #00818a;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+.bottom-linkedin {
+  background-image: url(assets/linkedin-bottom-small.svg);
+}
+
+.bottom-github {
+  background-image: url(assets/github-bottom-small.svg);
+}
+
+.bottom-stackoverflow {
+  background-image: url(assets/stackoverflow-bottom-small.svg);
+}
+
+.link-button {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-button h3 {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #00818a;
+  font-weight: bold;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+  background: #09194f;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0px 50px 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  line-height: 29px;
+  letter-spacing: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div {
+  width: 303px;
+}
+
+h3 {
+  font-size: 21px;
+  line-height: 25px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #00818a;
+}
+
+footer h3 {
+  color: #fff;
+  line-height: 25px;
+}
+
+h4 {
+  margin: 10px;
+  font-weight: bold;
+}
+
+footer p {
+  line-height: 1.5;
+}
+
+.h4-footer {
+  font-weight: bold;
+}
+
+footer h4 {
+  margin: 10px;
+  font-weight: unset;
+}
+
+/* Media query for tablets */
+
+@media all and (min-width: 765px) {
+  body {
+    background: url("assets/douro-background-tablet.png");
+  }
+  header {
+    height: 580px;
+  }
+  .main-header-container {
+    width: 690px;
+  }
+  .header-name-description {
+    width: 500px;
+  }
+  .header-name-description h4 {
+    font-size: 21px;
+    line-height: 24px;
+  }
+  h1 {
+    font-size: 61px;
+    line-height: 75px;
+  }
+  .header-name-description h2 {
+    font-size: 37px;
+    line-height: 45px;
+  }
+  .header-links-menu {
+    width: 690px;
+  }
+  .header-link {
+    width: 60px;
+    height: 60px;
+  }
+  .linkedin {
+    background-image: url(assets/linkedin-tablet.svg);
+  }
+  .github {
+    background-image: url(assets/github-tablet.svg);
+  }
+  .stackoverflow {
+    background-image: url(assets/stackoverflow-tablet.svg);
+  }
+  .header-picture {
+    width: 655px;
+  }
+  img.picture {
+    width: 240px;
+  }
+  .intro p {
+    width: 690px;
+  }
+  .line-dot {
+    top: 17px;
+    width: 70px;
+    height: 4px;
+  }
+  .line-dot::after {
+    height: 15px;
+    width: 15px;
+    top: -5px;
+  }
+  .tech-description {
+    width: 690px;
+    line-height: 39px;
+  }
+  h2 {
+    font-size: 35px;
+    line-height: 43px;
+  }
+  section {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .main-projects {
+    display: flex;
+    justify-content: space-between;
+    width: 690px;
+  }
+  .projects-column-2 {
+    display: block;
+  }
+  .project-snapshot {
+    height: 192px;
+    width: 330px;
+  }
+  .project-description {
+    width: 330px;
+  }
+  .project-title h3 {
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .project-description p {
+    font-size: 21px;
+    line-height: 35px;
+  }
+  div.tag {
+    font-size: 13px;
+    line-height: 15px;
+    height: 23px;
+  }
+  .other-projects {
+    width: 690px;
+  }
+  h3 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .project-collapsed {
+    width: 690px;
+  }
+  .project-collapsed .project-description {
+    width: 690px;
+  }
+  .mobile-only {
+    display: none;
+  }
+  .main-articles {
+    display: flex;
+    justify-content: space-between;
+    width: 690px;
+  }
+  .article-expanded:nth-child(2) {
+    display: block;
+  }
+  .article-snapshot {
+    height: 280px;
+    width: 330px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+  }
+  .article-description {
+    width: 330px;
+  }
+  .date {
+    font-size: 21px;
+    line-height: 37px;
+  }
+  .article-description p {
+    font-size: 21px;
+    line-height: 37px;
+  }
+  .article-title {
+    font-size: 26px;
+    line-height: 37px;
+    font-weight: bold;
+  }
+  .article-collapsed {
+    width: 690px;
+  }
+  .article-title-collapsed {
+    font-size: 21px;
+  }
+  .article-collapsed-description {
+    width: 690px;
+  }
+  .skill-column {
+    flex-basis: 30%;
+  }
+  .skill-double-column {
+    flex-direction: row;
+    flex-basis: 60%;
+  }
+  .skill-double-column .skill-column {
+    flex-basis: 30%;
+  }
+  .skills-description {
+    width: 690px;
+  }
+  .skill-column {
+    flex-basis: 30%;
+    text-align: center;
+  }
+  .bottom-links {
+    width: 690px;
+    margin-top: 50px;
+  }
+  .bottom-link {
+    width: 110px;
+    height: 110px;
+  }
+  .bottom-linkedin {
+    background-image: url(assets/linkedin-bottom-tablet.svg);
+  }
+  .bottom-github {
+    background-image: url(assets/github-bottom-tablet.svg);
+  }
+  .bottom-stackoverflow {
+    background-image: url(assets/stackoverflow-bottom-tablet.svg);
+  }
+  .link-button h3 {
+    font-size: 18px;
+    line-height: 41px;
+  }
+  footer {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  footer div {
+    width: 690px;
+  }
+  footer h3 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+/* Media query for bigger screens (desktop/laptop) */
+
+@media all and (min-width: 1200px) {
+  body {
+    background: url("assets/douro-background.png");
+  }
+  header {
+    height: 661px;
+  }
+  .main-header-container {
+    width: 1088px;
+  }
+  .header-link {
+    width: 80px;
+    height: 80px;
+  }
+  .linkedin {
+    background-image: url(assets/linkedin.svg);
+  }
+  .github {
+    background-image: url(assets/github.svg);
+  }
+  .stackoverflow {
+    background-image: url(assets/stackoverflow.svg);
+  }
+  .header-links-menu {
+    width: 1088px;
+  }
+  .header-name-description {
+    width: 500px;
+  }
+  .header-name-description h4 {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  h1 {
+    font-size: 82px;
+    line-height: 100px;
+  }
+  .header-name-description h2 {
+    font-size: 50px;
+    line-height: 61px;
+  }
+  .header-picture {
+    width: 1050px;
+  }
+  img.picture {
+    width: 333px;
+  }
+  .intro p {
+    width: 1088px;
+  }
+  .line-dot {
+    top: 22px;
+    width: 90px;
+    height: 5px;
+  }
+  .line-dot::after {
+    height: 20px;
+    width: 20px;
+    top: -6px;
+  }
+  h2 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  section {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .tech-description {
+    width: 1088px;
+    line-height: 49px;
+  }
+  .main-projects {
+    display: flex;
+    justify-content: space-between;
+    width: 1088px;
+  }
+  .projects-column-2 {
+    display: block;
+  }
+  .project-snapshot {
+    height: 305px;
+    width: 522px;
+  }
+  .project-title h3 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .project-description {
+    width: 522px;
+  }
+  .project-description p {
+    font-size: 25px;
+    line-height: 41px;
+  }
+  div.tag {
+    font-size: 16px;
+    line-height: 19px;
+    height: 29px;
+  }
+  .other-projects {
+    width: 1088px;
+  }
+  h3 {
+    font-size: 38px;
+    line-height: 47px;
+  }
+  .project-collapsed {
+    width: 1088px;
+  }
+  .project-collapsed .project-description {
+    width: 1088px;
+  }
+  .main-articles {
+    display: flex;
+    justify-content: space-between;
+    width: 1088px;
+  }
+  .article-expanded:nth-child(2) {
+    display: block;
+  }
+  .article-snapshot {
+    height: 354px;
+    width: 520px;
+  }
+  .article-description {
+    width: 520px;
+  }
+  .date {
+    font-size: 25px;
+    line-height: 41px;
+  }
+  .article-description p {
+    font-size: 25px;
+    line-height: 41px;
+  }
+  .article-title {
+    font-size: 30px;
+    line-height: 41px;
+    font-weight: bold;
+  }
+  .even-more-thoughts {
+    display: none;
+  }
+  .article-collapsed {
+    width: 1088px;
+  }
+  .article-collapsed-description {
+    width: 1088px;
+  }
+  .article-collapsed-description p {
+    font-size: 25px;
+    line-height: 29px;
+  }
+  .article-title-collapsed {
+    font-size: 25px;
+  }
+  .skills-description {
+    width: 1088px;
+  }
+  .bottom-links {
+    width: 1088px;
+    margin-top: 50px;
+  }
+  .bottom-link {
+    width: 160px;
+    height: 160px;
+  }
+  .bottom-linkedin {
+    background-image: url(assets/linkedin-bottom.svg);
+  }
+  .bottom-github {
+    background-image: url(assets/github-bottom.svg);
+  }
+  .bottom-stackoverflow {
+    background-image: url(assets/stackoverflow-bottom.svg);
+  }
+  .link-button h3 {
+    font-size: 25px;
+    line-height: 41px;
+  }
+  footer {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  footer div {
+    width: 1088px;
+  }
+  footer h3 {
+    font-size: 38px;
+    line-height: 47px;
+  }
+}
