@@ -364,6 +364,10 @@ div.tag {
 
 /* My Thoughts Section */
 
+.article-second {
+    display: none;
+}
+
 .article-snapshot {
     height: 205px;
     width: 301px;
@@ -692,6 +696,9 @@ footer h4 {
         display: flex;
         justify-content: space-between;
         width: 690px;
+    }
+    .article-second {
+        display: block;
     }
     .article-expanded:nth-child(2) {
         display: block;
